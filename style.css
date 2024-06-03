@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: "Reddit Mono", monospace;
+    font-size: 17px;
+    background-image: linear-gradient(#0F1B33, #0F1B33);
+    color: #CDCDCD;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+span {
+    font-weight: bold;
+}
+p {
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    align-items: center;
+    transition: justify-content .4s;
+}
+
+.line {
+    position: absolute;
+    left: 0px;
+    width: 100%; 
+    height: 1px; 
+    background-color: blue; 
+}
+
+.header-name {
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.header__left {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+a.active {
+    border-bottom: 2px solid blue;
+}
+
+a:active {
+    opacity: 0.7;
+}
+
+.header__input {
+    padding: 10px;
+    background-color: #111827;
+    border: solid 1px white;
+    outline: none;
+    border-radius: 27px;
+    color: white;
+    font-size: 14px;
+    padding-right: 40px;
+    transition: box-shadow .4s;
+
+}
+
+.search-form {
+    position: relative;
+}
+
+svg path {
+    fill: white;
+}
+
+.header__btn {
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    transition: background-color .3s;
+}
+
+.header__btn:active {
+    opacity: 0.7;
+}
+
+.header__input:focus {
+    box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.4);
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 170px;
+
+}
+
+
+.search__form-title {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search__input {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #111827;
+    border: solid 1px white;
+    outline: none;
+    border-radius: 27px;
+    color: white;
+    font-size: 16px;
+    padding-right: 40px;
+    margin-top: 52px;
+    transition: box-shadow .4s;
+}
+
+.search__input:focus {
+    box-shadow: 0px 0px 0px 3px rgba(255, 254, 254, 0.4);
+}
+
+.search__btn {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+}
+
+.search__btn:active {
+    opacity: 0.7;
+}
+
+
+.msg {
+    color: red;
+    text-align: center;
+}
+
+.hidden {
+    position: absolute;
+    visibility: hidden;
+}
+
+.card__movie {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.card__movie-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+}
+
+.poster {
+    max-width: 300px;
+    max-height: 450px;
+}
+
+.card__movie-right {
+    max-width: 600px;
+}
+
+.genre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ 
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.card-line {
+    height: 1px; 
+    background-color: blue; 
+}
+
+.story {
+    margin-top: 55px;
+}
+
+.storyline {
+    margin-bottom: 40px;
+}
+
+.aboutflex {
+    display: flex;
+    align-items: baseline;
+    gap: 40px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+      font-size: 13px; }
+  
+      .card__movie {
+        text-align: center;
+        max-width: 300px;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+
+    .poster {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+    
+    .card__movie-right {
+        text-align: center;
+    }
+    .about {
+        text-align: left;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header__left {
+        margin-bottom: 15px;
+    }
+}
