@@ -79,7 +79,7 @@ a:active {
     font-size: 14px;
     padding-right: 40px;
     transition: box-shadow .4s;
-
+    
 }
 
 .search-form {
@@ -176,7 +176,7 @@ svg path {
     margin-top: 50px;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 15px;
+    gap: 105px;
 }
 
 .card__movie-left {
@@ -192,7 +192,8 @@ svg path {
 }
 
 .card__movie-right {
-    max-width: 600px;
+    width: 600px;
+    margin: 0 auto;
 }
 
 .genre {
