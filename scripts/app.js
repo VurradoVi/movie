@@ -11,7 +11,7 @@ const header = document.getElementById('header')
 async function getMovie() {
     movieName = movieSearch.value
     movieSearch.value =''
-    let res = await fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=${APIKEY}`)
+    let res = await fetch(`https://omdbapi.com/?t=${movieName}&apikey=${APIKEY}`)
     let list = await res.json()
 
 
