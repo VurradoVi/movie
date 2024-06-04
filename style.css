@@ -219,11 +219,11 @@ svg path {
 }
 
 .plenka {
-    opacity: 0.8;
+    opacity: 0.7;
     position: absolute;
-    top: 15%;
+    top: 120px;
     left: 50%;
-    transform: translate(-50%, 15%);
+    transform: translate(-50%);
     max-width: 250px;
     max-height: 250px;
 }
