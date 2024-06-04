@@ -10,8 +10,13 @@ const header = document.getElementById('header')
 
 async function getMovie() {
     movieName = movieSearch.value
+
+    if (russianLetters(movieName)) {
+        return result.innerHTML = `<h4 class="msg">Write in English please</h4>`
+    }
+
     movieSearch.value =''
-    let res = await fetch(`https://omdbapi.com/?t=${movieName}&apikey=${APIKEY}`)
+    let res = await fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=${APIKEY}`)
     let list = await res.json()
 
 
@@ -63,6 +68,10 @@ async function getMovie() {
         result.innerHTML = `<h3 class="msg">Error occured</h3>`;
     }
     title.innerHTML = ''
+}
+
+function russianLetters(str) {
+    return /[\u0410-\u044F\u0451-\u0456\u0490-\u054A\u0560-\u0587]/.test(str);
 }
 
 

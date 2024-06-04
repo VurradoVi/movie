@@ -231,22 +231,30 @@ svg path {
 @media screen and (max-width: 600px) {
     .container {
       font-size: 13px; }
+      a {
+        font-size: 15px;
+    }
   
       .card__movie {
         text-align: center;
         max-width: 300px;
         margin: 10px auto;
         flex-direction: column;
+        gap: 20px;
+    }
+    .card__movie-left {
+        order: 2;
+    }
+    .card__movie-right {
+        order: 1;
     }
 
     .poster {
         max-width: 80%;
-        height: auto;
         margin: 0 auto;
       }
     
     .card__movie-right {
-        text-align: center;
         width: 300px;
     }
     .about {
@@ -256,7 +264,7 @@ svg path {
         flex-direction: column;
     }
     .header__left {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .search__title {
         margin: 50px 15px;
