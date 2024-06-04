@@ -13,8 +13,8 @@
         <header class="header">
             <div class="header__left">
                 <a href="index.html" class="header-name">Movies.io</a>
-                <a href="index.html" class="active">Home</a>
-                <a href="movies.html">Movies</a>
+                <a href="index.html">Home</a>
+                <a href="movies.html" class="active">Movies</a>
             </div>
 
             <div id="header" class="header__right">
@@ -25,25 +25,26 @@
         <div class="line"></div>
 
         <div id="title" class="search__title">
-            <h2 class="title">Movies.io: The best Movies and TV series</h2>
-            <div id="search">
-                <form class="search__form-title">
-                    <input id="search_movie" class="search__input" type="text" placeholder="Search the film">
-                    <button id="search_btn" class="search__btn">
+            <img class="plenka" src="img/cast.png" alt="Plenka">
+            <h2 class="title">Movies.io Trailers</h2>
+            <form id="search">
+                <div class="search__form-title">
+                    <input id="searchInput" class="search__input" type="text" placeholder="Search the trailer">
+                    <button onclick="searchTrailer()" class="search__btn">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
                                 d="M3.624,15a8.03,8.03,0,0,0,10.619.659l5.318,5.318a1,1,0,0,0,1.414-1.414l-5.318-5.318A8.04,8.04,0,0,0,3.624,3.624,8.042,8.042,0,0,0,3.624,15Zm1.414-9.96a6.043,6.043,0,1,1-1.77,4.274A6,6,0,0,1,5.038,5.038ZM4.622,9.311a1,1,0,0,1,2,0A2.692,2.692,0,0,0,9.311,12a1,1,0,0,1,0,2A4.7,4.7,0,0,1,4.622,9.311Z" />
                         </svg>
                     </button>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
 
         <div id="result">
 
         </div>
 
-        <script src="scripts/app.js"></script>
+        <script src="scripts/appMovies.js"></script>
     </div>
 </body>
 

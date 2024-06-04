@@ -10,6 +10,7 @@ const header = document.getElementById('header')
 
 async function getMovie() {
     movieName = movieSearch.value
+    movieSearch.value =''
     let res = await fetch(`http://www.omdbapi.com/?t=${movieName}&apikey=${APIKEY}`)
     let list = await res.json()
 
@@ -71,6 +72,7 @@ searchBtn.addEventListener('click', async function(event) {
         header.appendChild(search.firstChild)
     }
     movieSearch.style.marginTop = '0px';
+    movieSearch.style.padding = '13px 30px';
     getMovie();
 
 });

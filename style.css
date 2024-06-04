@@ -12,7 +12,6 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-    transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
 }
 
 
@@ -38,7 +37,6 @@ p {
     padding-top: 30px;
     padding-bottom: 25px;
     align-items: center;
-    transition: justify-content .4s;
 }
 
 .line {
@@ -59,10 +57,12 @@ p {
     display: flex;
     gap: 30px;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 a.active {
     border-bottom: 2px solid blue;
+    
 }
 
 a:active {
@@ -70,7 +70,6 @@ a:active {
 }
 
 .header__input {
-    padding: 10px;
     background-color: #111827;
     border: solid 1px white;
     outline: none;
@@ -78,8 +77,6 @@ a:active {
     color: white;
     font-size: 14px;
     padding-right: 40px;
-    transition: box-shadow .4s;
-    
 }
 
 .search-form {
@@ -100,7 +97,6 @@ svg path {
     width: 35px;
     height: 35px;
     background-color: transparent;
-    transition: background-color .3s;
 }
 
 .header__btn:active {
@@ -125,6 +121,7 @@ svg path {
     position: relative;
 }
 
+
 .search__input {
     display: block;
     width: 100%;
@@ -137,7 +134,6 @@ svg path {
     font-size: 16px;
     padding-right: 40px;
     margin-top: 52px;
-    transition: box-shadow .4s;
 }
 
 .search__input:focus {
@@ -164,11 +160,6 @@ svg path {
 .msg {
     color: red;
     text-align: center;
-}
-
-.hidden {
-    position: absolute;
-    visibility: hidden;
 }
 
 .card__movie {
@@ -200,7 +191,6 @@ svg path {
     display: flex;
     flex-direction: column;
     text-align: center;
- 
 }
 
 .card-title {
@@ -228,6 +218,15 @@ svg path {
     gap: 40px;
 }
 
+.plenka {
+    opacity: 0.8;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    max-width: 250px;
+    max-height: 250px;
+}
 
 @media screen and (max-width: 600px) {
     .container {
@@ -248,6 +247,7 @@ svg path {
     
     .card__movie-right {
         text-align: center;
+        width: 300px;
     }
     .about {
         text-align: left;
@@ -257,5 +257,8 @@ svg path {
     }
     .header__left {
         margin-bottom: 15px;
+    }
+    .search__title {
+        margin: 50px 15px;
     }
 }
